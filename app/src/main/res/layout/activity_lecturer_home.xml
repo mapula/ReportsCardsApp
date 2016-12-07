@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_lecturer_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.admin.cardreport.Lecturer_home"
+    android:weightSum="1">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please Student ID"
+        android:enabled="true"
+        android:id="@+id/lec_stu_num"
+        android:singleLine="true"
+        android:selectAllOnFocus="true"
+        android:inputType="number"
+        android:maxLength="10"
+        android:numeric="integer" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:id="@+id/btnSearch"
+        tools:layout_marginLeft="100dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:enabled="false"
+        android:id="@+id/lec_name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Surname"
+        android:enabled="false"
+        android:id="@+id/lec_surname"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:enabled="false"
+        android:id="@+id/lec_email"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Faculty"
+        android:enabled="false"
+        android:id="@+id/lec_course"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Term Marks: "
+            android:layout_gravity="center"
+            android:id="@+id/term"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="238dp"
+                android:layout_height="wrap_content"
+                android:hint="Test1"
+                android:id="@+id/lec_test1"
+
+                android:enabled="true"
+                android:maxLength="2" />
+
+            <EditText
+                android:layout_width="236dp"
+                android:layout_height="wrap_content"
+                android:hint="Test2"
+                android:enabled="true"
+                android:id="@+id/lec_test2"
+                android:maxLength="2" />
+            <EditText
+                android:layout_width="236dp"
+                android:layout_height="wrap_content"
+                android:hint="Test3"
+                android:enabled="true"
+                android:id="@+id/lec_test3"
+                android:maxLength="2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UPDATE"
+            android:enabled="false"
+            android:id="@+id/btnupdate" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:text="VIEW"
+            android:id="@+id/btnview" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="DELETE"
+            android:id="@+id/btndelete" />
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:indeterminate="false"
+        android:progressTint="@android:color/background_dark"
+        android:max="@android:integer/config_shortAnimTime"
+        android:progress="@android:integer/config_longAnimTime"
+        tools:visibility="visible"
+        android:visibility="invisible" />
+</LinearLayout>

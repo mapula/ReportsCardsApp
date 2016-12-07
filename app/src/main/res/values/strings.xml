@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Card Report</string>
+    <string name="occupation_prompt">Select Occupation</string>
+    <string-array name="occupation_array">
+        <item>Student</item>
+        <item>Lecturer</item>
+    </string-array>
+</resources>
